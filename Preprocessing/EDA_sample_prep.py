@@ -82,7 +82,7 @@ def modify_reads (df):
 
         
 if __name__ == "__main__":
-    df = FASTA2DF("./READS.fasta")
+    df = FASTA2DF("./Data/READS.fasta")
     view_len(df)
     sample_query = modify_reads(df)
 
