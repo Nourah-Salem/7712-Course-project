@@ -21,12 +21,12 @@ Still have to:
     
     2. Construct adn Unit test the De Bruijn graph for query elongation
     
-## Inputs
+## Problem Inputs
 1. List of reads (str), in a FASTA format
 2. Query (str), in FASTA format
-## Outputs
-1. long string (contig) that carries the query inside
-2. a list of the overlapping reads with their matching indecies
+## Problem Final Outputs
+1. Long string (contig) that carries the query inside
+2. A list of the overlapping reads with their matching indecies
 ## Installation
 make sure you have python 3.6 and 
 install the folling packages before running
