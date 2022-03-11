@@ -14,8 +14,11 @@ Curretly, we only can:
     1. Preprocess the inputs and apply EDA
     2. Creat small smaples for testing purposes (reads and query)
     3. Build the query from the reads list 
+
 Still have to:
+    
     1. Unit test the built funtions in EDA_sample_prep.py & Query_cop.py 
+    
     2. Construct adn Unit test the De Bruijn graph for query elongation
     
 ## Inputs
