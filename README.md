@@ -2,7 +2,8 @@
 # Constructing the Longest Conting (Containing a Specific Query) from DNA Reads 
 
 
-![alt text](![bruno-kelzer-zzoscdxh6ss-unsplash](https://user-images.githubusercontent.com/65971542/162638251-1e46aff4-b226-4a07-b3dc-1c504ed07c32.jpg?raw=true)
+![bruno-kelzer-zzoscdxh6ss-unsplash](https://user-images.githubusercontent.com/65971542/162638251-1e46aff4-b226-4a07-b3dc-1c504ed07c32.jpg?raw=true)
+1[https://ec.europa.eu/research-and-innovation/en/horizon-magazine/new-braking-systems-and-satellite-navigation-help-more-trains-run-europes-tracks]
 
 
 In thid project, we have a list of DNA reads and a spcific query, nad we aim at building the longest possible contig by overlapping the reads and at the same time the contig must contain the given query.
