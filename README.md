@@ -2,7 +2,7 @@
 # Constructing the Longest Conting (Containing a Specific Query) from DNA Reads 
 
 
-![App Screenshot](https://drive.google.com/file/d/1YsdyrwmPRiP2PKLXqyHoBOiGfS4JN5VL/view?usp=sharing)
+![App Screenshot]("https://drive.google.com/file/d/1YsdyrwmPRiP2PKLXqyHoBOiGfS4JN5VL/view?usp=sharing")
 
 In thid project, we have a list of DNA reads and a spcific query, nad we aim at building the longest possible contig by overlapping the reads and at the same time the contig must contain the given query.
 
