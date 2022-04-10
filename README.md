@@ -6,7 +6,7 @@
 [https://ec.europa.eu/research-and-innovation/en/horizon-magazine/new-braking-systems-and-satellite-navigation-help-more-trains-run-europes-tracks]
 
 
-In thid project, we have a list of DNA reads and a spcific query, nad we aim at building the longest possible contig by overlapping the reads and at the same time the contig must contain the given query.
+In this project, we have a list of DNA reads and a spcific query, nad we aim at building the longest possible contig by overlapping the reads and at the same time the contig must contain the given query.
 
 The first part of the project is to apply simple preprocesdatasing on the 
 then, recontruct the query from the reads list. 
