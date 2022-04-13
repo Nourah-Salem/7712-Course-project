@@ -63,7 +63,7 @@ pip install -U matplotlib
 numpy
 unittest
 ```
-## Usage
+## Usage 
 A. Please make sure to download the repo so that the data files are in the right place
 B. For converting the input FASTA files to CSV and generate sample data, please run:
 ```python
@@ -92,4 +92,11 @@ These files are available in the **Output** folder
 E. To plot the histogram of the match reages, please reun: 
 ```python
 python Histogam_plot.py
+```
+## Unit Testing
+We focused on the correctness of the input data though the **class TestLCS** in the **testing_matching_range.py** file.
+we tested:
+```python 1.test_LCS_input_type
+2. test_UpperCase
+3. test_non_empty_input
 ```
