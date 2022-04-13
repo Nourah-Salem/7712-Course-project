@@ -79,7 +79,7 @@ C. For Comparing the reads to the query and selecting the reads that can make th
 python matching_range.py 
 ```
 This will return:
-the full version of the table in the **Example of the output** section
+the full version of the table in the **[Example of the output]** section
 
 D. To genetare the assgignment output files for the 4 longest candidate contig, please run:
 ```python
@@ -97,7 +97,7 @@ python Histogam_plot.py
 We focused on the correctness of the input data though the **class TestLCS** in the **testing_matching_range.py** file.
 we tested:
 ```python 
-1.test_LCS_input_type
+1. test_LCS_input_type
 2. test_UpperCase
 3. test_non_empty_input
 ```
