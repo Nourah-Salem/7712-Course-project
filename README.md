@@ -60,8 +60,7 @@ install the folling packages before running
 pip install pandas
 pip install seaborn
 pip install -U matplotlib
-pip install numpy
-import unittest
+numpy
+unittest
 
-
-
+##
