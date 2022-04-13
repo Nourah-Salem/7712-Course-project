@@ -51,7 +51,7 @@ As we selected the best charcter match range and the number of candidate reads, 
 
 ![Screenshot4](https://user-images.githubusercontent.com/65971542/163257747-81e9e0b9-c953-41cb-a00d-d50a903dab9c.png)
 
-THis table show a smple of the reads that can make contig1, their start and end indecies and the start and end indecies of the parts of the query matching 
+This table shows a smple of the reads that can make contig1, their start and end indecies and the start and end indecies of the parts of the query matching 
 
 ## Installation
 make sure you have python 3.6 and 
@@ -63,3 +63,12 @@ pip install -U matplotlib
 numpy
 unittest
 ```
+## Usage
+for converting the input FASTA files to CSV and generate sample data, please run:
+```python
+EDA_sample_prep.Py
+```
+This will return 
+1. A **CSV** file of our input reads
+2. sample_query: 
+GGGTGGTCTCCTTTACTTGTAACTTGTCCTAAGTCGTTTCTTTAGCCCATGGTGTTGGTGGGGTTCACAGAAACACCCAGAGTTCACCTGAGCCTTTAACCAATCCCAGCCAGGAGCCAGAGCCCAGGCACAGGTGCAGGACCACGGCAGGCCCAGTATTTGGCTTCCACAGAAGCTACGGCATCAGAAGTCGTGTTTAATTGTTCTTCTGCTTCTTCCTGTCTCTCGGTGGCTCCTTGAGGGCTTTGATGATCAGGCTGACCCTAAAATATTGTAAAAAGCTAACAGTTTACCATTTTCCCAGCGTGAAAGTCCATCCCTAGCTGAGCTGTTTGAGGAACACAGAGGAAGCAGCGACTGGACCGAAGGTTGCTTTACTTTGGTCCTGTCGGTTCTCCCCTCAACTCAGCCTGGGCCTGCCCTGGGCCTATTCACGTCATGGCAAATTACATTTCTTTTCCGAGCCTGTCCCGATGAAGATGCGGCCGTCCTGCAGGATGCACCTCATCCTGTAGTCAATGTGCTGCAGCATCTTGCTGCTCTTGCCCACCGTCATGGTGGCGGCTCGGATGGCTCAGATTCCCGCCGGATTCTCTGCACAGAGCGCAGTCGCCAG
