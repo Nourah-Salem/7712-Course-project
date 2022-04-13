@@ -32,7 +32,7 @@ We allowed for all possible overlaps between the query and all reads we have usi
 3. we made a series of trail for the best threshold that allows for lowering the redunduncy of match and maintain the query coverage as well:
 
 |Length of Alignment Threshold (bases) |Number of reads per contig |Do they cover the whole query range? |
-
+| :----------------------------------- |:-------------------------:| -----------------------------------:|
 | > 13                                 |153                        |True                                 |
 
 | > 45                                 |127                        |True                                 |
