@@ -26,8 +26,8 @@ We allowed for all possible overlaps between the query and all reads we have usi
 3. A detailed list of the overlapping reads with the query their matching indecies: ALLELES.aln
 4. A detailed list of the overlapping reads with the query their matching indecies: ALLELES.CSV
 
-## Usage Example
-1. We used the longest common substring algorithm implemented in the **Longest_Contig_spanning_query/matching_range.py** to measure the overlap of the reads list (124520 reads) with the query. 
+## Usage Explanation
+1. We used the longest common substring algorithm implemented in the **/Longest_Contig_spanning_query/matching_range.py** (LCS function) to measure the overlap of the reads list (124520 reads) with the query. 
 2. We then decided to filter the reads by the number of matchs they made with the query, becasue it is possible that many of the small range match can actually be present in many DNA fragments (reads), therefore considering such reads is not helpful.
 3. we made a series of trail for the best threshold that allows for lowering the redunduncy of match and maintain the query coverage as well:
 
@@ -40,7 +40,16 @@ We allowed for all possible overlaps between the query and all reads we have usi
 | > 140                                |24                         |False                                |
 
 Once we found that setting the threshold for the match length (140 characters and more) generated a 24 reads and those reads are not spanning the whole query (meaning that part of the query in not found or covered by any of those 24 reads), we decided that our thresholds for the matchs between the reads and the query is 130.
+
 Meaning that those **43 reads** that we able to make alignment with the query with **130 bases match or more** were selected as our **contig** building blocks and **query carriers** as well
+
+# Example of the output
+As we selected the best charcter match range and the number of candidate reads, we validated that those reads are able to cover the whole query using **/Longest_Contig_spanning_query/matching_range.py** (np.logical_or function). This is a smaple of one detailed output file:
+
+![Screenshot4](https://user-images.githubusercontent.com/65971542/163257747-81e9e0b9-c953-41cb-a00d-d50a903dab9c.png)
+
+THis table show a smple of the reads that can make contig1, their start and end indecies and the start and end indecies of the parts of the query matching 
+
 ## Installation
 make sure you have python 3.6 and 
 install the folling packages before running
