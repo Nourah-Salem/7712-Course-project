@@ -6,26 +6,17 @@
 
 [https://ec.europa.eu/research-and-innovation/en/horizon-magazine/new-braking-systems-and-satellite-navigation-help-more-trains-run-europes-tracks]
 
-DNA sequencing into small fragments is an important step for studing the genetic material. This allows to find the associations between modifications within the gene and potential phenotypic changes. Genome assembly refers to the process of putting small nucleotide sequence (reads) into the correct order. Assembly is required, as the sequence read lengths are much shorter than most genomes or even most genes. therefore, analyzing them requires assembly. And the process of assembly requires reconstructing the larger size of sequence is called contig. 
+DNA sequencing into small fragments is an important step for studing the genetic material. This allows to find the associations between modifications within the gene and potential phenotypic changes. Genome assembly refers to the process of putting small nucleotide sequence (reads) into the correct order. at the end of sequencing, assembly is required, as the sequence read lengths are much shorter than most genomes or even most genes. therefore, analyzing them requires assembly. And the process of assembly requires reconstructing the larger size of sequence is called contig. However, the process of reassembly  -within the genetic context- is not a straightforward process. it is similar to a complex train trafic lines that intersect with each other! 
 
-In this project, we have a list of DNA reads and a spcific query, nad we aim at building the longest contig spanning the given query, this is achieved via the overlapping the reads. such overlaps are specifically between the reads and the query. 
+In this project, we have a list of DNA reads that we want to make a longer query from and a spcific query, and we aim at building the longest contig spanning the given query, this could achieved via the overlapping the sequences and those that allow for certain range of alignment with each other are good candidates for building the contig. Such overlaps are specifically between the reads and the query. 
 
 ![Screenshot3](https://user-images.githubusercontent.com/65971542/163247740-ab9fdc49-9b2f-4fe4-afb4-382091e84efb.png)
 
-Herein, we allowed four all possible overlaps between the query and all reads we have. for that we made an initial trial of 10,000 reeds and looked at the range of characters (match length) that match to the query. from that, we had an initial assumption about the legit alignments versus those that can happen at random the following graph shows a sample of 10,000 reads aligned to the query.
+We allowed for all possible overlaps between the query and all reads we have using Longest common substring algorithm implemented in a dynamic programming frame. We then selected the candidate reads by the length of match they can make with the query. We used a threshold of 130 and more bases matching between the query and the reads. We also validated that the 43 selected for making the longest contig are unique and are covering the whole query through the following scripts (respectively):
+##
+1. Generate_contigs.py
+2. matching_range.py 
 
-
-The first part of the project is to apply simple preprocesdatasing on the 
-then, recontruct the query from the reads list. 
-once the query is constructed, we can extend it from both sides to make the longest contig.
-
-The algorithm is still being built and by the end of the 7712 course, we will have it complete with the proper test units.
-
-Curretly, we can: 
-    
-    1. Preprocess the inputs and apply EDA
-    2. Creat small smaples for testing purposes (reads and query)
-    3. Build the query from the reads list 
 ## Inputs
 1. List of reads (str), in a FASTA format
 2. Query (str), in FASTA format
