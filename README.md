@@ -26,9 +26,12 @@ We allowed for all possible overlaps between the query and all reads we have usi
 3. A detailed list of the overlapping reads with the query their matching indecies: ALLELES.aln
 4. A detailed list of the overlapping reads with the query their matching indecies: ALLELES.CSV
 
-## Usage Explanation
-1. We used the longest common substring algorithm implemented in the **/Longest_Contig_spanning_query/matching_range.py** (LCS function) to measure the overlap of the reads list (124520 reads) with the query. 
-2. We then decided to filter the reads by the number of matchs they made with the query, becasue it is possible that many of the small range match can actually be present in many DNA fragments (reads), therefore considering such reads is not helpful.
+## Main Steps:
+1. We used the longest common substring algorithm implemented in the **/Longest_Contig_spanning_query/matching_range.py** (LCS function) to measure the overlap of the reads list (124520 reads) with the query. **in fact**, we made an initial trial of 10,000 reeds and looked at the range of characters (match length) that match to the query. from that, we had an initial assumption about the legit alignments versus those that can happen at random the following graph shows a sample of 10,000 reads aligned to the query. 
+
+![Figure1](https://user-images.githubusercontent.com/65971542/163258552-2b2fc827-47c9-4e50-a754-9818a948e44d.png)
+
+2. We can see this spike in the graph tells us that the majority of the alignments were too short that they might be seen as random matches. Their lengths were from 7 character match to 13 characters. Therefore, then decided to filter the reads by the number of matchs they made with the query, becasue it is possible that many of the small range match can actually be present in many DNA fragments (reads), therefore considering such reads is not helpful.
 3. we made a series of trail for the best threshold that allows for lowering the redunduncy of match and maintain the query coverage as well:
 
 |Length of Alignment Threshold (bases) |Number of reads per contig |Do they cover the whole query range? |
