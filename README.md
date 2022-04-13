@@ -64,11 +64,32 @@ numpy
 unittest
 ```
 ## Usage
-for converting the input FASTA files to CSV and generate sample data, please run:
+A. Please make sure to download the repo so that the data files are in the right place
+B. For converting the input FASTA files to CSV and generate sample data, please run:
 ```python
-EDA_sample_prep.Py
+python EDA_sample_prep.Py
 ```
 This will return 
 1. A **CSV** file of our input reads
 2. sample_query: 
 GGGTGGTCTCCTTTACTTGTAACTTGTCCTAAGTCGTTTCTTTAGCCCATGGTGTTGGTGGGGTTCACAGAAACACCCAGAGTTCACCTGAGCCTTTAACCAATCCCAGCCAGGAGCCAGAGCCCAGGCACAGGTGCAGGACCACGGCAGGCCCAGTATTTGGCTTCCACAGAAGCTACGGCATCAGAAGTCGTGTTTAATTGTTCTTCTGCTTCTTCCTGTCTCTCGGTGGCTCCTTGAGGGCTTTGATGATCAGGCTGACCCTAAAATATTGTAAAAAGCTAACAGTTTACCATTTTCCCAGCGTGAAAGTCCATCCCTAGCTGAGCTGTTTGAGGAACACAGAGGAAGCAGCGACTGGACCGAAGGTTGCTTTACTTTGGTCCTGTCGGTTCTCCCCTCAACTCAGCCTGGGCCTGCCCTGGGCCTATTCACGTCATGGCAAATTACATTTCTTTTCCGAGCCTGTCCCGATGAAGATGCGGCCGTCCTGCAGGATGCACCTCATCCTGTAGTCAATGTGCTGCAGCATCTTGCTGCTCTTGCCCACCGTCATGGTGGCGGCTCGGATGGCTCAGATTCCCGCCGGATTCTCTGCACAGAGCGCAGTCGCCAG
+
+C. For Comparing the reads to the query and selecting the reads that can make the longest contig spanning the query, please run:
+```python
+python matching_range.py 
+```
+This will return:
+the full version of the table in the **Example of the output** section
+
+D. To genetare the assgignment output files for the 4 longest candidate contig, please run:
+```python
+python PythonGenerate_contigs.py
+```
+This will return:
+1. all the output files requiered in the assignment
+These files are available in the **Output** folder
+
+E. To plot the histogram of the match reages, please reun: 
+```python
+python Histogam_plot.py
+```
