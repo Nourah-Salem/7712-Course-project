@@ -61,16 +61,7 @@ pip install pandas
 pip install seaborn
 pip install -U matplotlib
 pip install numpy
-
-## Running scripts
-
-## Please make sure to download the repo 
-## so that the data files are in the right place
-## then run:
-
-Python EDA_sample_prep.Py
-Python query copy.py
-## Screenshots
+import unittest
 
 
 
