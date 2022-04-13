@@ -96,7 +96,8 @@ python Histogam_plot.py
 ## Unit Testing
 We focused on the correctness of the input data though the **class TestLCS** in the **testing_matching_range.py** file.
 we tested:
-```python 1.test_LCS_input_type
+```python 
+1.test_LCS_input_type
 2. test_UpperCase
 3. test_non_empty_input
 ```
