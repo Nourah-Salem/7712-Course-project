@@ -2,12 +2,14 @@
 # Constructing the Longest Conting (Containing a Specific Query) from DNA Reads 
 
 
-![Screenshot](https://user-images.githubusercontent.com/65971542/163244901-d894f431-e30f-483a-a580-a29a160a6194.png)
+![Screenshot2](https://user-images.githubusercontent.com/65971542/163245219-c43f2fd1-6479-470a-8801-9b470b5ef729.png)
 [https://ec.europa.eu/research-and-innovation/en/horizon-magazine/new-braking-systems-and-satellite-navigation-help-more-trains-run-europes-tracks]
 
-![Screenshot2](https://user-images.githubusercontent.com/65971542/163245219-c43f2fd1-6479-470a-8801-9b470b5ef729.png)
+DNA sequencing into small fragments is an important step for studing the genetic material. This allows to find the associations between modifications within the gene and potential phenotypic changes. Genome assembly refers to the process of putting small nucleotide sequence (reads) into the correct order. Assembly is required, as the sequence read lengths are much shorter than most genomes or even most genes. therefore, analyzing them requires assembly. And the process of assembly requires reconstructing the larger size of sequence is called contig. 
 
-In this project, we have a list of DNA reads and a spcific query, nad we aim at building the longest possible contig by overlapping the reads and at the same time the contig must contain the given query.
+In this project, we have a list of DNA reads and a spcific query, nad we aim at building the longest contig spanning the given query, this is achieved via the overlapping the reads. such overlaps are specifically between the reads and the query.
+![Screenshot3](https://user-images.githubusercontent.com/65971542/163247179-325cc173-22e7-4984-b5ba-b50a2c7d7dd6.png)
+
 
 The first part of the project is to apply simple preprocesdatasing on the 
 then, recontruct the query from the reads list. 
