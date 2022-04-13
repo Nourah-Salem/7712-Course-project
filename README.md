@@ -5,6 +5,7 @@
 ![Screenshot](https://user-images.githubusercontent.com/65971542/163244901-d894f431-e30f-483a-a580-a29a160a6194.png)
 [https://ec.europa.eu/research-and-innovation/en/horizon-magazine/new-braking-systems-and-satellite-navigation-help-more-trains-run-europes-tracks]
 
+![Screenshot2](https://user-images.githubusercontent.com/65971542/163245219-c43f2fd1-6479-470a-8801-9b470b5ef729.png)
 
 In this project, we have a list of DNA reads and a spcific query, nad we aim at building the longest possible contig by overlapping the reads and at the same time the contig must contain the given query.
 
