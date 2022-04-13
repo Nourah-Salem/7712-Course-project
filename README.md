@@ -34,15 +34,15 @@ We allowed for all possible overlaps between the query and all reads we have usi
 |Length of Alignment Threshold (bases) |Number of reads per contig |Do they cover the whole query range? |
 | :----------------------------------- |:-------------------------:| -----------------------------------:|
 | > 13                                 |153                        |True                                 |
-
+| :----------------------------------- |:-------------------------:| -----------------------------------:|
 | > 45                                 |127                        |True                                 |
-
+| :----------------------------------- |:-------------------------:| -----------------------------------:|
 | > 90                                 |82                         |True                                 |
-
+| :----------------------------------- |:-------------------------:| -----------------------------------:|
 | > 130                                |43                         |True                                 |
-
+| :----------------------------------- |:-------------------------:| -----------------------------------:|
 | > 140                                |24                         |False                                |
-
+| :----------------------------------- |:-------------------------:| -----------------------------------:|
 Once we found that setting the threshold for the match length (140 characters and more) generated a 24 reads and those reads are not spanning the whole query (meaning that part of the query in not found or covered by any of those 24 reads), we decided that our thresholds for the matchs between the reads and the query is 130.
 Meaning that those **43 reads** that we able to make alignment with the query with **130 bases match or more** were selected as our **contig** building blocks and **query carriers** as well
 ## Installation
