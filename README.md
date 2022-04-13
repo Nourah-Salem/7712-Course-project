@@ -3,13 +3,16 @@
 
 
 ![Screenshot2](https://user-images.githubusercontent.com/65971542/163245219-c43f2fd1-6479-470a-8801-9b470b5ef729.png)
+
 [https://ec.europa.eu/research-and-innovation/en/horizon-magazine/new-braking-systems-and-satellite-navigation-help-more-trains-run-europes-tracks]
 
 DNA sequencing into small fragments is an important step for studing the genetic material. This allows to find the associations between modifications within the gene and potential phenotypic changes. Genome assembly refers to the process of putting small nucleotide sequence (reads) into the correct order. Assembly is required, as the sequence read lengths are much shorter than most genomes or even most genes. therefore, analyzing them requires assembly. And the process of assembly requires reconstructing the larger size of sequence is called contig. 
 
-In this project, we have a list of DNA reads and a spcific query, nad we aim at building the longest contig spanning the given query, this is achieved via the overlapping the reads. such overlaps are specifically between the reads and the query.
+In this project, we have a list of DNA reads and a spcific query, nad we aim at building the longest contig spanning the given query, this is achieved via the overlapping the reads. such overlaps are specifically between the reads and the query. 
 
-![Screenshot3](https://user-images.githubusercontent.com/65971542/163247179-325cc173-22e7-4984-b5ba-b50a2c7d7dd6.png)
+![Screenshot3](https://user-images.githubusercontent.com/65971542/163247740-ab9fdc49-9b2f-4fe4-afb4-382091e84efb.png)
+
+Herein, we allowed four all possible overlaps between the query and all reads we have. for that we made an initial trial of 10,000 reeds and looked at the range of characters (match length) that match to the query. from that, we had an initial assumption about the legit alignments versus those that can happen at random the following graph shows a sample of 10,000 reads aligned to the query.
 
 
 The first part of the project is to apply simple preprocesdatasing on the 
@@ -27,8 +30,10 @@ Curretly, we can:
 1. List of reads (str), in a FASTA format
 2. Query (str), in FASTA format
 ## Outputs
-1. long string (contig) that carries the query inside
-2. a list of the overlapping reads with their matching indecies
+1. Long strings ( 4 candidate contigs) that carries the query inside: ALLELES.fasta
+2. Long string (candidate contigs) that carries the query inside: results.fasta
+3. A detailed list of the overlapping reads with the query their matching indecies: ALLELES.aln
+4. A detailed list of the overlapping reads with the query their matching indecies: ALLELES.CSV
 ## Installation
 make sure you have python 3.6 and 
 install the folling packages before running
