@@ -30,13 +30,16 @@ We allowed for all possible overlaps between the query and all reads we have usi
 1. We used the longest common substring algorithm implemented in the **Longest_Contig_spanning_query/matching_range.py** to measure the overlap of the reads list (124520 reads) with the query. 
 2. We then decided to filter the reads by the number of matchs they made with the query, becasue it is possible that many of the small range match can actually be present in many DNA fragments (reads), therefore considering such reads is not helpful.
 3. we made a series of trail for the best threshold that allows for lowering the redunduncy of match and maintain the query coverage as well:
-Length of Alignment Threshold (bases)	Number of reads per contig	Do they cover the whole query range?
-> 13	153	True
-> 45 	127	True
-> 90 	82	True
-> 130	43	True
-> 140	24	False
-4. 
+
+|Length of Alignment Threshold (bases) |Number of reads per contig |Do they cover the whole query range? |
+| > 13                                 |153                        |True                                 |
+| > 45                                 |127                        |True                                 |
+| > 90                                 |82                         |True                                 |
+| > 130                                |43                         |True                                 |
+| > 140                                |24                         |False                                |
+
+Once we found that setting the threshold for the match length (140 characters and more) generated a 24 reads and those reads are not spanning the whole query (meaning that part of the query in not found or covered by any of those 24 reads), we decided that our thresholds for the matchs between the reads and the query is 130.
+Meaning that those **43 reads** that we able to make alignment with the query with **130 bases match or more** were selected as our **contig** building blocks and **query carriers** as well
 ## Installation
 make sure you have python 3.6 and 
 install the folling packages before running
