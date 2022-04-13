@@ -1,7 +1,7 @@
 
 import unittest
 
-class TestPreprocessing(unittest.TestCase):
+class TestLCS(unittest.TestCase):
     
     def test_LCS_input (self):
         a = 'ATGC'
