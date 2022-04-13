@@ -2,7 +2,7 @@
 # Constructing the Longest Conting (Containing a Specific Query) from DNA Reads 
 
 
-![bruno-kelzer-zzoscdxh6ss-unsplash](https://user-images.githubusercontent.com/65971542/162638251-1e46aff4-b226-4a07-b3dc-1c504ed07c32.jpg?raw=true, width = "100" )
+![Screenshot](https://user-images.githubusercontent.com/65971542/163244901-d894f431-e30f-483a-a580-a29a160a6194.png)
 [https://ec.europa.eu/research-and-innovation/en/horizon-magazine/new-braking-systems-and-satellite-navigation-help-more-trains-run-europes-tracks]
 
 
