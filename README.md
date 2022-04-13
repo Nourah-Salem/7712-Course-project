@@ -40,7 +40,7 @@ We allowed for all possible overlaps between the query and all reads we have usi
 | > 90                                 |82                         |True                                 |
 | :----------------------------------- |:-------------------------:| -----------------------------------:|
 | > 130                                |43                         |True                                 |
-| :----------------------------------- |:-------------------------:| -----------------------------------:|
+|  ----------------------------------- | ------------------------- | ----------------------------------- |
 | > 140                                |24                         |False                                |
 
 Once we found that setting the threshold for the match length (140 characters and more) generated a 24 reads and those reads are not spanning the whole query (meaning that part of the query in not found or covered by any of those 24 reads), we decided that our thresholds for the matchs between the reads and the query is 130.
